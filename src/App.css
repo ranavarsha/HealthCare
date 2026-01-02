@@ -1,38 +1,131 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #898b8dd4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 400px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+input,
+textarea,
+button {
+  margin-bottom: 12px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 70px;
+}
+
+button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-card {
+  max-width: 700px;     
+  padding: 30px 40px;   
+  margin: 60px auto;   
+  background: #ffffff;
+  color: #031325;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.home-desc {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #0f1116;
+  line-height: 1.6;
+}
+
+.feature-list {
+  max-width: 420px;
+  color: #040406;
+  list-style: none;        
+  padding-left: 0;
+  margin: 10px 0 20px 0;
+}
+
+.feature-list li {
+  margin-bottom: 8px;      
+  font-size: 15px;
+  text-align: left;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* custom tick bullet */
+.feature-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: green;
+  font-weight: bold;
+}
+
+.cta-text {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.container ul {
+  text-align: left;
+  margin-top: 20px;
+}
+
+nav {
+  background-color: rgb(221, 221, 221);
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
 }
